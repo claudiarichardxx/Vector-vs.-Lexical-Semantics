@@ -1,0 +1,7 @@
+pytrec-eval-terrier
+nltk
+scipy
+gensim
+scikit-learn
+matplotlib
+numpy
