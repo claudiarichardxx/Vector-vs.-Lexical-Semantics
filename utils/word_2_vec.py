@@ -1,5 +1,6 @@
 from gensim.models import Word2Vec
 import itertools
+import gensim
 
 class Word2Vec:
 
@@ -15,8 +16,7 @@ class Word2Vec:
                 model_key = "Word2Vec_window_"+ str(window) +"_vector_size_"+ str(size) + "_" + corpus
                 print("Training Word2Vec with window : "+ str(window) +" and vector size : "+ str(size))
 
-                model = Word2Vec(sentences = corpora[corpus], vector_size = size, window = window,
-                                min_count = 1, workers = 4, epochs = iterations)
+                model = gensim.models.Word2Vec(sentences = corpora[corpus], vector_size = size, window = window, min_count = 1, workers = 4, epochs = iterations)
 
                 word2vec_models[model_key] = model
 
