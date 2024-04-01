@@ -3,9 +3,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 import pytrec_eval
 
 class Evaluation:
-    # Assuming 'similarity_dict' contains words from SimLex-999 as keys and their similar words as values
-# and 'corpus_brown_tokenized' is your tokenized corpus used for training
-    def prepare_data_for_pytreceval(top_k_G, top_k_v):
+    
+    def prepare_data_for_pytreceval(self, top_k_G, top_k_v):
         qrels = {}
         runs = {}
 
@@ -19,7 +18,7 @@ class Evaluation:
 
         return qrels, runs
     
-    def get_nDCG(top_k_v_models):
+    def get_nDCG(self, top_10_G, top_k_v_models):
 
         ndcg_scores = {}
 
@@ -38,7 +37,7 @@ class Evaluation:
 
         return ndcg_scores
 
-    def evaluateWord2Vec(word2vec_models):
+    def evaluateWord2Vec(similarity_dict, word2vec_models):
     
         top_k_v_models = {}  # Dictionary to store top-10 similar words from each model for each word in SimLex-999
 

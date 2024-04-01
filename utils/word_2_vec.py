@@ -3,12 +3,8 @@ import itertools
 
 class Word2Vec:
 
-    def buildWord2vecModels(corpora):
-        # Define the parameters for experimentation
-        context_windows = [1, 2, 5, 10]
-        vector_sizes = [10, 50, 100, 300]
-        iterations = 100  # Fixed number of iterations
-
+    def buildWord2vecModels(corpora, context_windows = [1, 2, 5, 10], vector_sizes = [10, 50, 100, 300], iterations = 100):
+        
         # Store the models in a dictionary for easy access
         word2vec_models = {}
 
