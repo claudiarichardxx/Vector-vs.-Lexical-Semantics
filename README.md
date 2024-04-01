@@ -7,7 +7,7 @@ To  install the required libraries, run this:
 pip install -r requirements.txt
 ```
 # Quickstart:
-Run this for a quick start on this repo. A copy of this can be found in the example run at /notebook_run.ipynb. 
+Run this for a quick start on this repo. A sample run can be found in the example run at /notebook_run.ipynb. 
 ```
 from utils.build_evaluation_sets import buildSet
 from utils.build_vocab import simLex
@@ -54,3 +54,8 @@ The configurations to the Word2Vec model can be changed with the parameters to t
 2. context_windows = [] ; default = [1, 2, 5, 10]
 3. vector_sizes = [], ; default = [10, 50, 100, 300]
 4. iterations = int ; default = 100
+
+# Folders
+1. The SimLex-999 file can be found in data/
+2. The helper functions are split into modules and can be found in utils/
+3. The main.py file has the entire pipeline that should be executed
