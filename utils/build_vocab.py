@@ -10,7 +10,7 @@ stop_words = set(stopwords.words('english'))
 
 class simLex:
 
-    def getSimDict(golden_truth_path = 'data\EN-SIMLEX-999.txt'):
+    def getSimDict(golden_truth_path = 'data/EN-SIMLEX-999.txt'):
 
         similarity_dict = {}
         with open(golden_truth_path, 'r') as file:
