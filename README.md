@@ -21,7 +21,7 @@ nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('brown')
 
-#A sample run using 10 iterations
+#A sample run using 100 iterations
 corpus_raw, corpora = buildSet.getCorpus(corpus_list = ['news', 'romance'])
 similarity_dict = simLex.getSimDict()
 top_k_g = simLex.formTop_k_g(similarity_dict, k = 10)
