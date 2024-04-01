@@ -59,3 +59,4 @@ The configurations to the Word2Vec model can be changed with the parameters to t
 1. The SimLex-999 file can be found in data/
 2. The helper functions are split into modules and can be found in utils/
 3. The main.py file has the entire pipeline that should be executed
+4. image.JPG shows our results with the best Word2Vec models and the tf-idf models trained on the 'news' and 'romance' categories of the 'Brown' corpus
